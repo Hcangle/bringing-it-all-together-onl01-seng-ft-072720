@@ -1,3 +1,7 @@
+
+require 'pry'
+require_relative "../config/environment.rb"
+
 class Dog 
   
   attr_accessor :name, :breed, :id
@@ -10,7 +14,7 @@ class Dog
   
   def self.create_table 
     sql = <<-SQL 
-     CREATE TABLW IF NOT EXISTS dogs ( 
+     CREATE TABLE IF NOT EXISTS dogs ( 
      id INTEGER PRIMARY KEY, 
      name TEXT, 
      breed TEXT
