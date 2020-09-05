@@ -56,7 +56,8 @@ end
      self.new(id: id, name: name, breed: breed)
    end 
      
-   
+   def self.create_by_id(id)
+     
    
    
    
